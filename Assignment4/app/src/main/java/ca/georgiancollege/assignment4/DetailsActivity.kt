@@ -9,14 +9,14 @@ import androidx.lifecycle.ViewModelProvider
 class DetailsActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetails2Binding
-    private lateinit var viewModel: DetailsViewModel // Add ViewModel
+    private lateinit var viewModel: ToDoViewModel // Add ViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityDetails2Binding.inflate(layoutInflater)
         setContentView(binding.root)
-        viewModel = ViewModelProvider(this)[DetailsViewModel::class.java]
+        viewModel = ViewModelProvider(this)[ToDoViewModel::class.java]
 
 //        binding.saveButton.setOnClickListener {
 //            saveTVShow()
