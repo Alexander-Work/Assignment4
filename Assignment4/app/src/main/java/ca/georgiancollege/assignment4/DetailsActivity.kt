@@ -1,19 +1,10 @@
-package ca.georgiancollege.assignment3
+package ca.georgiancollege.assignment4
 
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import ca.georgiancollege.assignment3.databinding.ActivityDetails2Binding
-import android.widget.Toast
+import ca.georgiancollege.assignment4.databinding.ActivityDetails2Binding
 import androidx.lifecycle.ViewModelProvider
-import com.google.android.material.datepicker.MaterialDatePicker
-import java.text.SimpleDateFormat
-import java.util.Calendar
-import java.util.Locale
-import java.util.TimeZone
 
 class DetailsActivity : AppCompatActivity() {
 

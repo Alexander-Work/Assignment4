@@ -1,4 +1,4 @@
-package ca.georgiancollege.assignment3
+package ca.georgiancollege.assignment4
 
 import org.junit.Test
 

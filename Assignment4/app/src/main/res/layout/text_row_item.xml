@@ -14,7 +14,7 @@
         android:padding="16dp">
 
         <TextView
-            android:id="@+id/event_title"
+            android:id="@+id/eventTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/event_text"
@@ -22,7 +22,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/details"
+            android:id="@+id/eventDetails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/details_text"
@@ -39,7 +39,7 @@
         android:padding="16dp">
 
         <TextView
-            android:id="@+id/title_date"
+            android:id="@+id/date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/date_text"

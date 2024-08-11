@@ -1,4 +1,4 @@
-package ca.georgiancollege.assignment3
+package ca.georgiancollege.assignment4
 
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.LiveData
@@ -25,7 +25,7 @@ class DetailsViewModel : ViewModel() {
             val calendar = Calendar.getInstance(TimeZone.getTimeZone("UTC"))
             calendar.timeInMillis = selection
             val formattedDate = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(calendar.time)
-            _selectedDate.value = formattedDate // Update LiveDatawith selected date
+            _selectedDate.value = formattedDate // Update LiveData with selected date
         }
 
         datePicker.show(fragmentManager, "datePicker")
