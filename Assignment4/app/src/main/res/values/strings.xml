@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Assignment3</string>
+    <string name="title_text">Title</string>
+    <string name="subtitle_text">Subtitle</string>
+    <string name="date_text">Date</string>
+    <string name="logout_button">Logout</string>
+    <string name="date_input">Time</string>
+    <string name="details_text">context here</string>
+    <string name="time">Time here</string>
+    <string name="event_text">Event Title</string>
+    <string name="enter_event_title">Enter Event Title</string>
+    <string name="enter_date">Enter Date</string>
+    <string name="enter_time">Enter Time</string>
+    <string name="enter_event_details">Any details to the event here</string>
+    <string name="add_an_event">Event Add Button</string>
+    <string name="ToDoTitle">To Do List</string>
+</resources>

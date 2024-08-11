@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+<!--    https://www.color-hex.com/color-palette/1048651  Sunset Fade-->
+<!--    <color name="Pink">#c16376</color>-->
+<!--    <color name="DarkPink">#a6607e</color>-->
+<!--    <color name="Purple">#8a5d86</color>-->
+<!--    <color name="Violet">#6f5a8e</color>-->
+<!--    <color name="Blue">#545796</color>-->
+<!--    https://www.color-hex.com/color-palette/1294 Beautiful Blues-->
+    <color name="NavyBlue">#011f4b</color>
+    <color name="DarkBlue">#03396c</color>
+    <color name="SeaBlue">#005b96</color>
+    <color name="LightBlue">#6497b1</color>
+    <color name="LightGray">#b3cde0</color>
+
+</resources>
