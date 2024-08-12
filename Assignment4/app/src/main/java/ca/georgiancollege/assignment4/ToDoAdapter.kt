@@ -25,7 +25,7 @@ class ToDoAdapter(private val onItemClicked: (ToDoItem) -> Unit) :
 
     // Called by the RecyclerView to display the data at the specified position.
     override fun onBindViewHolder(holder: ToDoViewHolder, position: Int) {
-        // Get the TVShow item at the given position
+        // Get the to do item at the given position
         val current = getItem(position)
         // Bind the TVShow item to the ViewHolder
         holder.bind(current)

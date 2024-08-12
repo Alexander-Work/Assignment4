@@ -58,6 +58,7 @@ dependencies {
     //firestore
     implementation(libs.firebase.firestore.ktx)
     implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.firestore)
 
     // ViewModel
     val lifecycle_version = "2.8.3"

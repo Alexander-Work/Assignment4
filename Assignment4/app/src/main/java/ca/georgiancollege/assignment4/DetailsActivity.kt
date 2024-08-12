@@ -8,6 +8,7 @@ package ca.georgiancollege.assignment4
 
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.activity.viewModels
@@ -80,16 +81,17 @@ class DetailsActivity : AppCompatActivity() {
     // Function to save or update a ToDoItem
     private fun saveToDoItem()
     {
-        val title = binding.editTextTitle.text.toString()
+        val eventTitle = binding.editTextTitle.text.toString()
         val date = binding.editDate.text.toString()
-        val time = binding.editTextTime.text.toString().toDoubleOrNull() ?: 0.0
+        val time = binding.editTextTime.text.toString()
         val eventDetails = binding.editTextDetails.text.toString()
 
 
-        if(title.isNotEmpty())
+        if(eventTitle.isNotEmpty())
         {
-            val toDoItem = ToDoItem(id = toDoItemId ?: UUID.randomUUID().toString(), title = title, date = date, time = time, eventDetails = eventDetails)
-            viewModel.saveToDoItem(toDoItem)
+            Log.d("DetailsActivity", "Saving ToDoItem - ID: $toDoItemId, Title: $eventTitle, Date: $date, Time: $time, Details: $eventDetails")
+//            val toDoItem = ToDoItem(id = toDoItemId ?: UUID.randomUUID().toString(), eventTitle = eventTitle, date = date, time = time, eventDetails = eventDetails)
+//            viewModel.saveToDoItem(toDoItem)
             Toast.makeText(this, "To Do Saved", Toast.LENGTH_SHORT).show()
             finish()
         }
@@ -103,12 +105,12 @@ class DetailsActivity : AppCompatActivity() {
     private fun deleteToDoItem() {
         toDoItemId?.let { _ ->
             AlertDialog.Builder(this)
-                .setTitle("Delete TV Show")
-                .setMessage("Are you sure you want to delete this TV Show?")
+                .setTitle("Delete To Do")
+                .setMessage("Are you sure you want to delete this To Do?")
                 .setPositiveButton("Yes") { _, _ ->
                     viewModel.toDoItem.value?.let {
                         viewModel.deleteToDoItem(it)
-                        Toast.makeText(this, "TV Show Deleted", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, "To Do Deleted", Toast.LENGTH_SHORT).show()
                         finish()
                     }
                 }

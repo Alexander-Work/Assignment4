@@ -16,10 +16,10 @@ data class ToDoItem(
     val eventTitle: String,
     val eventDetails: String,
     val date: String,
-    val time: Double,
+    val time: String,
     val complete: Boolean
 )
 {
     // No-argument constructor required for Firestore deserialization
-    constructor() : this("", "", "", "", 0.0, false)
+    constructor() : this("", "", "", "", "", false)
 }
