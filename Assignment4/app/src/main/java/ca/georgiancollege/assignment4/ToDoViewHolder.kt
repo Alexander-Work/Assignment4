@@ -19,11 +19,11 @@ class ToDoViewHolder(private val binding: TextRowItemBinding) : RecyclerView.Vie
         // event details text row
         binding.eventDetails.text = toDoItem.eventDetails
         // event date text row
-        binding.date.text = toDoItem.Date
+        binding.date.text = toDoItem.date
         // event time text row
-        binding.time.text = toDoItem.Time.toString()
+        binding.time.text = toDoItem.time.toString()
         // event complete checkbox
-        if (toDoItem.Complete){
+        if (toDoItem.complete){
             binding.checkBox.isChecked = true
         }
 

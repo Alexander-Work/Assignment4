@@ -15,9 +15,9 @@ data class ToDoItem(
     @DocumentId val id: String = "",
     val eventTitle: String,
     val eventDetails: String,
-    val Date: String,
-    val Time: Double,
-    val Complete: Boolean
+    val date: String,
+    val time: Double,
+    val complete: Boolean
 )
 {
     // No-argument constructor required for Firestore deserialization
