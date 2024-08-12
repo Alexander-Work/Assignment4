@@ -1,3 +1,9 @@
+/*  ToDoViewModel.kt
+    Alexander Peebles
+    200376601
+    August 11th 2024
+    To Do App - Assignment 4
+* */
 package ca.georgiancollege.assignment4
 
 import androidx.fragment.app.FragmentManager
@@ -12,10 +18,10 @@ import java.util.TimeZone
 class ToDoViewModel : ViewModel() {
 
     private val dataManager = DataManager.instance()
-    // live data to hold list of tv shows
+    // live data to hold list of events
     private val m_toDoItems = MutableLiveData<List<ToDoItem>>()
     val toDoItems: LiveData<List<ToDoItem>> get() = m_toDoItems
-    //live data to hold tv show
+    //live data to hold a single event
     private val m_toDoItem = MutableLiveData<ToDoItem?>()
     val toDoItem: LiveData<ToDoItem?> get() = m_toDoItem
 

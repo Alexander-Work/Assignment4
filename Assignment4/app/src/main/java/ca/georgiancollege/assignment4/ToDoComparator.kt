@@ -1,18 +1,23 @@
+/*  ToDoComparator.kt
+    Alexander Peebles
+    200376601
+    August 11th 2024
+    To Do App - Assignment 4
+* */
 package ca.georgiancollege.assignment4
 
 import androidx.recyclerview.widget.DiffUtil
 
-// This is a utility class that helps the Recycler Adapter determine
-// how to efficiently update the list when the data changes
+// compares two events so the list will not display two of the same "id"
 class ToDoComparator: DiffUtil.ItemCallback<ToDoItem>()
 {
-    // This method checks if two items represent the same entity by comparing their IDs.
+    //checks id
     override fun areItemsTheSame(oldItem: ToDoItem, newItem: ToDoItem): Boolean
     {
         return oldItem.id == newItem.id
     }
 
-    // this method checks if the contents of two items are the same by comparing their properties.
+    // checks properties
     override fun areContentsTheSame(oldItem: ToDoItem, newItem: ToDoItem): Boolean
     {
         return oldItem == newItem

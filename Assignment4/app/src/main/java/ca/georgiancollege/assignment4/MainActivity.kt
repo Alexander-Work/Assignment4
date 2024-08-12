@@ -1,3 +1,9 @@
+/*  MainActivty.kt
+    Alexander Peebles
+    200376601
+    August 11th 2024
+    To Do App - Assignment 4
+* */
 package ca.georgiancollege.assignment4
 
 import android.content.Intent
